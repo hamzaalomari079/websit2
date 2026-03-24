@@ -123,7 +123,7 @@ a:hover {
   border-radius: var(--radius-md);
   font-family: var(--font-unified);
   font-weight: 600;
-  font-size: var(--font-size-body);
+  font-size: 18px;
   cursor: pointer;
   transition: all var(--transition-normal);
   text-decoration: none;
@@ -167,7 +167,7 @@ a:hover {
 
 .btn-sm {
   padding: 0.625rem 1.5rem;
-  font-size: var(--font-size-body);
+  font-size: 16px;
 }
 
 .btn-lg {
@@ -202,7 +202,7 @@ header.scrolled {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: var(--font-size-sub-title);
+  font-size: var(--font-size-body);
   font-weight: 700;
   color: var(--dark-gray);
   text-decoration: none;
@@ -242,6 +242,7 @@ header.scrolled {
   border-radius: 999px;
   padding: 0.45rem 0.9rem;
   font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
   transition: all var(--transition-normal);
 }
@@ -261,7 +262,7 @@ header.scrolled {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-body);
+  font-size: 16px;
   cursor: pointer;
   transition: all var(--transition-normal);
 }
@@ -274,6 +275,7 @@ header.scrolled {
 .nav-links a {
   color: var(--dark-gray);
   font-weight: 600;
+  font-size: 16px;
   transition: all var(--transition-normal);
   position: relative;
   padding: 0.5rem 0.75rem;
@@ -305,10 +307,10 @@ header.scrolled {
 .cta-btn {
   background: var(--gradient-warm);
   color: var(--white);
-  padding: 0.95rem 1.75rem;
+  padding: 0.75rem 1.25rem;
   border-radius: var(--radius-md);
   font-weight: 800;
-  font-size: var(--font-size-body);
+  font-size: 16px;
   border: 1px solid rgba(12, 85, 96, 0.75);
   box-shadow: 0 6px 16px rgba(15, 106, 114, 0.28);
   transition: all var(--transition-normal);
@@ -1014,7 +1016,7 @@ footer {
   }
 
   .logo {
-    font-size: var(--font-size-body);
+    font-size: 16px;
   }
 
   .site-logo {
@@ -1163,7 +1165,7 @@ footer {
 
   .logo {
     gap: 0.35rem;
-    font-size: var(--font-size-body);
+    font-size: 16px;
   }
 
   .site-logo {
@@ -1203,7 +1205,7 @@ footer {
   .btn-lg,
   .btn-sm {
     padding: 0.75rem 0.65rem;
-    font-size: var(--font-size-body);
+    font-size: 16px;
   }
 
   .nav-links {
