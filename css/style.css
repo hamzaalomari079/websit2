@@ -1,5 +1,5 @@
 /* هذا الملف يحتوي تنسيقات كل صفحات الموقع */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
 
 /* الوان وخطوط ومسافات اساسية */
 :root {
@@ -21,9 +21,10 @@
   --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
   
   
-  --font-playfair: 'Playfair Display', serif;
-  --font-lato: 'Lato', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --font-unified: 'Cairo', sans-serif;
+  --font-size-main-title: 40px;
+  --font-size-sub-title: 26px;
+  --font-size-body: 20px;
   
   
   --spacing-xs: 0.5rem;
@@ -64,7 +65,8 @@ html {
 }
 
 body {
-  font-family: var(--font-lato);
+  font-family: var(--font-unified);
+  font-size: var(--font-size-body);
   color: var(--dark-gray);
   background-color: var(--white);
   line-height: 1.6;
@@ -73,34 +75,35 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair);
+  font-family: var(--font-unified);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: var(--font-size-main-title);
   letter-spacing: -1px;
 }
 
-h2 {
-  font-size: 2.5rem;
+h2, h3, h4, h5, h6 {
+  font-size: var(--font-size-sub-title);
   letter-spacing: -0.5px;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
 }
 
 p {
   margin-bottom: var(--spacing-md);
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   line-height: 1.8;
+}
+
+a,
+li,
+label,
+input,
+textarea,
+select {
+  font-size: var(--font-size-body);
 }
 
 a {
@@ -118,9 +121,9 @@ a:hover {
   padding: 1rem 2.25rem;
   border: none;
   border-radius: var(--radius-md);
-  font-family: var(--font-lato);
+  font-family: var(--font-unified);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   cursor: pointer;
   transition: all var(--transition-normal);
   text-decoration: none;
@@ -164,12 +167,12 @@ a:hover {
 
 .btn-sm {
   padding: 0.625rem 1.5rem;
-  font-size: 0.875rem;
+  font-size: var(--font-size-body);
 }
 
 .btn-lg {
   padding: 1.15rem 2.8rem;
-  font-size: 1.2rem;
+  font-size: var(--font-size-sub-title);
 }
 
 /* تنسيق الهيدر والقائمة */
@@ -199,7 +202,7 @@ header.scrolled {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 1.5rem;
+  font-size: var(--font-size-sub-title);
   font-weight: 700;
   color: var(--dark-gray);
   text-decoration: none;
@@ -258,7 +261,7 @@ header.scrolled {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   cursor: pointer;
   transition: all var(--transition-normal);
 }
@@ -305,7 +308,7 @@ header.scrolled {
   padding: 0.95rem 1.75rem;
   border-radius: var(--radius-md);
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: var(--font-size-body);
   border: 1px solid rgba(12, 85, 96, 0.75);
   box-shadow: 0 6px 16px rgba(15, 106, 114, 0.28);
   transition: all var(--transition-normal);
@@ -368,13 +371,13 @@ header.scrolled {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: var(--font-size-main-title);
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-body);
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -405,7 +408,7 @@ header.scrolled {
   border-radius: 999px;
   padding: 0.55rem 1rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body);
 }
 
 .quick-nav a:hover {
@@ -441,12 +444,12 @@ header.scrolled {
 }
 
 .section-title h2 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-sub-title);
   margin-bottom: 1rem;
 }
 
 .section-title p {
-  font-size: 1.1rem;
+  font-size: var(--font-size-body);
   color: #666;
   max-width: 600px;
   margin: 0 auto;
@@ -486,7 +489,7 @@ header.scrolled {
 
 .feature-card p {
   color: #666;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body);
 }
 
 .card {
@@ -518,7 +521,7 @@ header.scrolled {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: var(--font-size-sub-title);
   margin-bottom: 0.5rem;
 }
 
@@ -552,11 +555,11 @@ header.scrolled {
   padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: var(--font-size-body);
 }
 
 .package-price {
-  font-size: 2.5rem;
+  font-size: var(--font-size-main-title);
   font-weight: 700;
   color: var(--primary-orange);
   margin-bottom: 0.5rem;
@@ -578,7 +581,7 @@ header.scrolled {
   content: '✓';
   color: var(--primary-green);
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: var(--font-size-sub-title);
 }
 
 .testimonial-card {
@@ -597,7 +600,7 @@ header.scrolled {
 
 .stars {
   color: #FCD34D;
-  font-size: 1.25rem;
+  font-size: var(--font-size-sub-title);
   margin-bottom: 0.5rem;
 }
 
@@ -617,17 +620,17 @@ header.scrolled {
 }
 
 .author-avatar {
-  font-size: 2rem;
+  font-size: var(--font-size-sub-title);
 }
 
 .author-info h4 {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-size-sub-title);
 }
 
 .author-info p {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: var(--font-size-body);
   color: #999;
 }
 
@@ -692,8 +695,8 @@ footer {
   padding: 0.875rem;
   border: 2px solid #e0e0e0;
   border-radius: var(--radius-md);
-  font-family: var(--font-lato);
-  font-size: 1rem;
+  font-family: var(--font-unified);
+  font-size: var(--font-size-body);
   transition: all var(--transition-normal);
 }
 
@@ -832,7 +835,7 @@ footer {
   background: var(--gradient-warm);
   color: var(--white);
   padding: 1rem;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
 }
 
 .compare-table td {
@@ -917,9 +920,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
+  h1 { font-size: var(--font-size-main-title); }
+  h2 { font-size: var(--font-size-sub-title); }
+  h3 { font-size: var(--font-size-sub-title); }
   
   .navbar {
     padding: 1rem;
@@ -952,11 +955,11 @@ footer {
 
   
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-main-title);
   }
   
   .hero-content p {
-    font-size: 1rem;
+    font-size: var(--font-size-body);
   }
   
    .hero-buttons {
@@ -972,7 +975,7 @@ footer {
   }
 
   .quick-nav a {
-    font-size: 0.9rem;
+    font-size: var(--font-size-body);
   }
   
   .hero-buttons .btn {
@@ -1011,7 +1014,7 @@ footer {
   }
 
   .logo {
-    font-size: 1.15rem;
+    font-size: var(--font-size-body);
   }
 
   .site-logo {
@@ -1095,8 +1098,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.5rem; }
+  h1 { font-size: var(--font-size-main-title); }
+  h2 { font-size: var(--font-size-sub-title); }
   
   .container {
     padding: 0 1rem;
@@ -1116,7 +1119,7 @@ footer {
   }
   
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-main-title);
   }
   
   .section {
@@ -1160,7 +1163,7 @@ footer {
 
   .logo {
     gap: 0.35rem;
-    font-size: 0.95rem;
+    font-size: var(--font-size-body);
   }
 
   .site-logo {
@@ -1182,7 +1185,7 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 1.15rem;
+    font-size: var(--font-size-main-title);
     line-height: 1.35;
     margin-bottom: 0.45rem;
     overflow-wrap: anywhere;
@@ -1190,7 +1193,7 @@ footer {
   }
 
   .hero-content p {
-    font-size: 0.82rem;
+    font-size: var(--font-size-body);
     line-height: 1.6;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -1200,7 +1203,7 @@ footer {
   .btn-lg,
   .btn-sm {
     padding: 0.75rem 0.65rem;
-    font-size: 0.9rem;
+    font-size: var(--font-size-body);
   }
 
   .nav-links {
@@ -1220,11 +1223,11 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 1rem;
+    font-size: var(--font-size-main-title);
   }
 
   .hero-content p {
-    font-size: 0.74rem;
+    font-size: var(--font-size-body);
   }
 }
 
@@ -1394,7 +1397,7 @@ body.dark-mode .hamburger span {
   border-radius: 50%;
   background: var(--gradient-warm);
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: var(--font-size-sub-title);
   cursor: pointer;
   z-index: 1200;
   box-shadow: 0 10px 25px rgba(15, 106, 114, 0.35);
@@ -1554,7 +1557,7 @@ html[lang="en"] .section-title p {
 
 @media (max-width: 768px) {
   html[lang="en"] h1 {
-    font-size: 1.9rem;
+    font-size: var(--font-size-main-title);
     line-height: 1.3;
   }
 
@@ -1567,7 +1570,7 @@ html[lang="en"] .section-title p {
   }
 
   html[lang="en"] .quick-nav a {
-    font-size: 0.82rem;
+    font-size: var(--font-size-body);
     padding: 0.48rem 0.72rem;
   }
 }
