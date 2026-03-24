@@ -1,5 +1,5 @@
 /* هذا الملف يحتوي تنسيقات كل صفحات الموقع */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
 
 /* الوان وخطوط ومسافات اساسية */
 :root {
@@ -21,9 +21,7 @@
   --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
   
   
-  --font-playfair: 'Playfair Display', serif;
-  --font-lato: 'Lato', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --font-unified: 'Cairo', sans-serif;
   
   
   --spacing-xs: 0.5rem;
@@ -64,7 +62,7 @@ html {
 }
 
 body {
-  font-family: var(--font-lato);
+  font-family: var(--font-unified);
   color: var(--dark-gray);
   background-color: var(--white);
   line-height: 1.6;
@@ -73,7 +71,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair);
+  font-family: var(--font-unified);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
@@ -118,7 +116,7 @@ a:hover {
   padding: 1rem 2.25rem;
   border: none;
   border-radius: var(--radius-md);
-  font-family: var(--font-lato);
+  font-family: var(--font-unified);
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -692,7 +690,7 @@ footer {
   padding: 0.875rem;
   border: 2px solid #e0e0e0;
   border-radius: var(--radius-md);
-  font-family: var(--font-lato);
+  font-family: var(--font-unified);
   font-size: 1rem;
   transition: all var(--transition-normal);
 }
